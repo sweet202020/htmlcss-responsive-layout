@@ -110,6 +110,10 @@
     background-color: darkgreen;
     height: 300px;
 }
+footer .container{
+    height: 300px;
+    background-color: darkmagenta;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -174,8 +178,12 @@ nav{
     background-color: var(--res-primary);
     margin-top: 3rem;
 }
+/* #endregion call_to_action */
 
-
+/* #region footer */
+footer{
+    background-color: var(--res-dark);
+}
 
 
 
