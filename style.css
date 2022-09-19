@@ -60,7 +60,9 @@
 .col_12{
     width: 100%
 }
-
+img{
+    max-width: 100%;
+}
 
 /* #region debug */
 .debug .demo .col_8{
@@ -123,9 +125,37 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 10px 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+li a{
+    text-decoration: none;
+    color: var(--res-lighter);
+}
+header img{
+    width: 50px;
+}
+header .button{
+    background-color: white;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2rem;
+}
+.menu i{
+    display: none;
 }
 /* #endregion header */
+
+
+
+
+
+
+
 
 /* #region demo*/
 .demo .container{
@@ -185,6 +215,7 @@ footer{
     background-color: var(--res-dark);
 }
 
+/* #endregion footer */
 
 
 /* responsive */
@@ -196,6 +227,13 @@ footer{
     .about_us .row{
         flex-direction: column-reverse;
     }
+    ul{
+        display: none;
+    }
+    .menu i{
+        display: block;
+        color: white;
+    }
 }
 @media screen and (max-width:768px) {
     .col_mid{
@@ -205,6 +243,12 @@ footer{
     .benefits .col_mid{
         width: 50%;
     } 
-    
+    ul{
+        display: none;
+    }
+    .menu i{
+        display: block;
+        color: white;
+    }
 
 }
