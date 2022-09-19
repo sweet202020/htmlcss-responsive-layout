@@ -67,12 +67,10 @@ img{
 
 /* #region debug */
 .debug .demo .col_8{
-    height: 200px;
-    border: 1px solid red;
+    height: 300px;
 }
 .debug .demo .col_4{
-    height: 200px;
-    border: 1px solid red;
+    height: 300px;
 }
 
 .debug .planning .col_6{
@@ -163,19 +161,25 @@ header .button{
 
 .demo .col_8{
     background-color: var(--res-secondary_light);
-    border-radius: 1rem;
-    padding: 0 1rem ;
+    border: 5px solid var(--res-lighter);
     position: relative;
-    margin-bottom: 1rem;
-
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
 }
 .demo .col_4{
-    background-color: var(--res-secondary_light);
    border-radius: 1rem;
-   margin: 0 1rem;
+   background-color: var(--res-secondary_light);
+   border: 5px solid var(--res-lighter);
+   position: relative;
+   margin-top: 1rem;
+   padding: 1rem;
+   text-align: center;
+}
+.demo .col_6{
+    background-color: var(--res-secondary_light);
 
 }
-
 .demo img{
     width: 130px;
     position: absolute;
@@ -199,6 +203,10 @@ header .button{
     color: white;
     border-radius: 2rem;
     margin: 2rem 0;
+}
+.col_4 i{
+    font-size: 70px;
+    color: var(--res-secondary);
 }
 /* #endregion demo*/
 /* #region planning */
@@ -254,7 +262,7 @@ footer{
 @media screen and (max-width:480px) {
     .col_mobile{
         width: 100%;
-        margin: 1rem 0;
+        margin: auto;
     }
     .about_us .row{
         flex-direction: column-reverse;
@@ -265,6 +273,13 @@ footer{
     .menu i{
         display: block;
         color: white;
+    }
+    .demo img{
+        position: relative;
+        margin-left: 45px;
+    }
+    .demo .col_8{
+        padding: 0 1rem;
     }
 }
 @media screen and (max-width:768px) {
