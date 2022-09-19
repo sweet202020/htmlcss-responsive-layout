@@ -14,3 +14,120 @@
     --res-lighter: #FFFFFF;
 
 }
+
+/* utilities */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col_1{
+    width: calc((100% / 12)*1);
+}
+.col_2{
+    width: calc((100% / 12)*2);
+}
+.col_3{
+    width: calc((100% / 12)*3);
+}
+.col_4{
+    width: calc((100% / 12)*4);
+}
+.col_5{
+    width: calc((100% / 12)*5);
+}
+.col_6{
+    width: 50%
+}
+.col_7{
+    width: calc((100% / 12)*7);
+}
+.col_8{
+    width: calc((100% / 12)*8);
+}
+.col_9{
+    width: calc((100% / 12)*9);
+}
+.col_10{
+    width: calc((100% / 12)*10);
+}
+.col_11{
+    width: calc((100% / 12)*11);
+}
+.col_12{
+    width: 100%
+}
+
+
+/* #region debug */
+.debug .demo .col_8{
+    background-color: #64af4d;
+    height: 200px;
+    border: 1px solid red;
+}
+.debug .demo .col_4{
+    background-color: #64af4d;
+    height: 200px;
+    border: 1px solid red;
+}
+.debug .planning{
+    height: 500px;
+}
+/* #endregion debug */
+
+/* #region header */
+header{
+    background-color: var(--res-secondary);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+/* #endregion header */
+
+/* #region demo*/
+.demo .container{
+    margin-top: 2rem;
+}
+.demo{
+    margin: 0 -1rem;
+}
+.demo .col_8{
+   padding: 0 1rem;
+   margin-bottom: 1rem;
+}
+/* #endregion demo*/
+
+.planning{
+    background-color: var(--res-primary);
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width:480px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .col_mobile{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+}
