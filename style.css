@@ -1,0 +1,16 @@
+/* common rules */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --res-darker: #000000;
+    --res-secondary: #0084FD;
+    --res-dark: #333333;
+    --res-primary: #9792E4;
+    --res-secondary_light: #B5DDFF;
+    --res-free: #FDC15F;
+    --res-lighter: #FFFFFF;
+
+}
