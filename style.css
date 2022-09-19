@@ -105,6 +105,11 @@
     background-color: orange;
     border: 1px solid black;
 }
+
+.debug .call_to_action .container{
+    background-color: darkgreen;
+    height: 300px;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -164,7 +169,11 @@ nav{
     margin-top: 3rem;
 }
 /* #endregion about_us */
-
+/* #region call_to_action */
+.call_to_action{
+    background-color: var(--res-primary);
+    margin-top: 3rem;
+}
 
 
 
