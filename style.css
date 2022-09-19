@@ -6,7 +6,7 @@
 }
 :root{
     --res-darker: #000000;
-    --res-secondary: #0084FD;
+    --res-secondary: #0088FD;
     --res-dark: #333333;
     --res-primary: #9792E4;
     --res-secondary_light: #B5DDFF;
@@ -17,12 +17,13 @@
 
 /* utilities */
 .container{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 .row{
     display: flex;
     flex-wrap: wrap;
+
 }
 .col_1{
     width: calc((100% / 12)*1);
@@ -66,12 +67,10 @@ img{
 
 /* #region debug */
 .debug .demo .col_8{
-    background-color: #64af4d;
     height: 200px;
     border: 1px solid red;
 }
 .debug .demo .col_4{
-    background-color: #64af4d;
     height: 200px;
     border: 1px solid red;
 }
@@ -112,7 +111,7 @@ img{
     background-color: darkgreen;
     height: 300px;
 }
-footer .container{
+.debug footer .container{
     height: 300px;
     background-color: darkmagenta;
 }
@@ -161,12 +160,45 @@ header .button{
 .demo .container{
     margin-top: 2rem;
 }
-.demo{
-    margin: 0 -1rem;
-}
+
 .demo .col_8{
-   padding: 0 1rem;
-   margin-bottom: 1rem;
+    background-color: var(--res-secondary_light);
+    border-radius: 1rem;
+    padding: 0 1rem ;
+    position: relative;
+    margin-bottom: 1rem;
+
+}
+.demo .col_4{
+    background-color: var(--res-secondary_light);
+   border-radius: 1rem;
+   margin: 0 1rem;
+
+}
+
+.demo img{
+    width: 130px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+}
+.demo h2{
+    color: var(--res-secondary);
+    margin: 1rem 0;
+    font-size: 15px;
+}
+.demo p{
+    font-size: 11px;
+    line-height: 20px;
+}
+.demo a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.25rem 2.5rem;
+    background-color: var(--res-secondary);
+    color: white;
+    border-radius: 2rem;
+    margin: 2rem 0;
 }
 /* #endregion demo*/
 /* #region planning */
