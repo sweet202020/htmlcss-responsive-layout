@@ -73,8 +73,25 @@
     height: 200px;
     border: 1px solid red;
 }
-.debug .planning{
-    height: 500px;
+
+.debug .planning .col_6{
+    background-color: darkblue;
+    height: 300px;
+    border: 1px solid white;
+}
+.debug .expert .container{
+    background-color: darkviolet;
+}
+.debug .expert .col_9{
+    background-color: darkgoldenrod;
+    height: 70px;
+    border: 1px solid;
+}
+.debug .expert .col_3{
+    background-color: chartreuse;
+    border: 1px solid;
+    height: 70px;
+
 }
 /* #endregion debug */
 
@@ -101,13 +118,24 @@ nav{
    margin-bottom: 1rem;
 }
 /* #endregion demo*/
-
+/* #region planning */
 .planning{
     background-color: var(--res-primary);
     margin-top: 2rem;
 }
+/* #endregion planning */
 
-
+/* #region expert */
+.expert{
+    margin-top: 3rem;
+}
+.expert h3{
+    padding: 2rem 0;
+    text-align: center;
+}
+.expert .col_9, .expert .col_3{
+    margin-top: 1rem;
+}
 
 
 
@@ -121,13 +149,15 @@ nav{
 
 /* responsive */
 @media screen and (max-width:480px) {
-    .row{
-        flex-direction: column;
-        align-items: center;
-    }
     .col_mobile{
         width: 100%;
         margin: 1rem 0;
     }
     
+}
+@media screen and (max-width:768px) {
+    .col_mid{
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
