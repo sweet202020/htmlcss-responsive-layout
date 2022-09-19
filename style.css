@@ -93,6 +93,12 @@
     height: 70px;
 
 }
+
+.debug .benefits .col_4{
+    height: 200px;
+    background-color: brown;
+    border: 1px solid yellow;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -136,10 +142,17 @@ nav{
 .expert .col_9, .expert .col_3{
     margin-top: 1rem;
 }
+/* #endregion expert */
 
-
-
-
+/* #region benefits */
+.benefits{
+    background-color: var(--res-primary);
+    margin-top: 3rem;
+}
+.benefits h3{
+    text-align: center;
+}
+/* #endregion benefits */
 
 
 
@@ -160,4 +173,7 @@ nav{
         width: 100%;
         margin: 1rem 0;
     }
+    .benefits .col_mid{
+        width: 50%;
+    } 
 }
