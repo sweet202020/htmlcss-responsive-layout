@@ -99,6 +99,12 @@
     background-color: brown;
     border: 1px solid yellow;
 }
+.debug .about_us .col_9,
+.debug .about_us .col_3{
+    height: 300px;
+    background-color: orange;
+    border: 1px solid black;
+}
 /* #endregion debug */
 
 /* #region header */
@@ -153,7 +159,11 @@ nav{
     text-align: center;
 }
 /* #endregion benefits */
-
+/* #region about_us */
+.about_us{
+    margin-top: 3rem;
+}
+/* #endregion about_us */
 
 
 
@@ -166,7 +176,9 @@ nav{
         width: 100%;
         margin: 1rem 0;
     }
-    
+    .about_us .row{
+        flex-direction: column-reverse;
+    }
 }
 @media screen and (max-width:768px) {
     .col_mid{
@@ -176,4 +188,6 @@ nav{
     .benefits .col_mid{
         width: 50%;
     } 
+    
+
 }
