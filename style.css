@@ -19,7 +19,7 @@ body{
 }
 /* utilities */
 .container{
-    width: 60%;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .row{
@@ -144,13 +144,6 @@ header .button{
 }
 /* #endregion header */
 
-
-
-
-
-
-
-
 /* #region demo*/
 .demo .container{
     margin-top: 2rem;
@@ -186,7 +179,7 @@ header .button{
 .demo h2{
     color: var(--res-secondary);
     margin: 1rem 0;
-    font-size: 15px;
+
 }
 .demo p{
     font-size: 11px;
@@ -206,6 +199,7 @@ header .button{
     color: var(--res-secondary);
 }
 /* #endregion demo*/
+
 /* #region planning */
 .planning{
     background-color: var(--res-primary);
@@ -246,20 +240,15 @@ header .button{
 .card h2{
     font-size: 15px;
 }
-.card span{
+.card div{
     display: inline-block;
     background-color: var(--res-primary);
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 10px;
+    margin-bottom: 2rem;
 }
 /* #endregion planning */
-
-
-
-
-
-
 
 /* #region expert */
 .expert .title{
@@ -294,6 +283,7 @@ header .button{
     padding-left: 0.5rem;
 }
 .expert .row img{
+    object-fit: cover;
     aspect-ratio: 1/1;
     width: 125px;
     border-radius: 50%;
@@ -302,7 +292,7 @@ header .button{
 .expert .row{
     background-color: var(--res-lighter);
 }
-.square{
+.caption{
     border: 5px solid white;
     background-color: var(--res-primary);
     border-radius: 2rem;
@@ -363,6 +353,7 @@ cite{
 
 
 /* #endregion benefits */
+
 /* #region about_us */
 .about_us{
     margin-top: 3rem;
@@ -407,30 +398,85 @@ cite{
 
 
 /* #endregion about_us */
+
 /* #region call_to_action */
+
 .call_to_action{
     background-color: var(--res-primary);
     margin-top: 3rem;
+    text-align: center;
+}
+.call_to_action h4{
+    font-size: 15px;
+    color: white;
+    filter: opacity(0.5);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.call_to_action h3{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 2rem;
+}
+.call_to_action h2{
+    color: var(--res-free);
+    font-size: 35px;
+}
+.call_to_action p{
+    color: white;
+    padding-top: 2rem;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.call_to_action a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--res-primary);
+    background-color: var(--res-lighter);
+    padding: 0.5rem 4rem;
+    margin: 2rem 0;
+    border-radius: 2rem;
+}
+.call_to_action div{
+    color: white;
+    font-size: 12px;
+    padding-bottom: 1.5rem;
+}
+.call_to_action span{
+    text-decoration: underline;
 }
 /* #endregion call_to_action */
 
 /* #region footer */
 footer{
     background-color: var(--res-dark);
+    text-align: center;
+    color: white;
 }
-
+footer p{
+    padding-right: 30%;
+    padding-left: 30%;
+    font-size: 13px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+footer span{
+    color: var(--res-primary);
+    text-decoration: underline;
+}
 /* #endregion footer */
 
 
 /* responsive */
 @media screen and (max-width:480px) {
+    .container{
+        max-width: 420px;
+    }
     .col_mobile{
         width: 100%;
         margin: auto;
     }
-    .about_us .row{
-        flex-direction: column;
-    }
+    /* header */
     ul{
         display: none;
     }
@@ -438,21 +484,41 @@ footer{
         display: block;
         color: white;
     }
-    .demo img{
-        left: 40px;
+    /* demo */
+    .demo .col_6{
+        padding-bottom: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .demo .col_4{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     .demo .col_8{
         padding: 0 1rem;
     }
-    .card{
-        margin-top: 2rem;
+    .demo img{
+        margin-left: 90px;
+    }
+    /* planning */
+    .planning .card{
+        margin-top: 0;
+    }
+    /* expert */
+    .caption{
+        padding-bottom: 2rem;
     }
     .expert .col_9, .expert .col_3{
         text-align: center;
         padding-left: 0;
     }
+    /* benefits */
     .benefits .col_4 div, .benefits .col_4 h4{
         padding: 1rem 0;
+    }
+    /* about us */
+    .about_us .row{
+        flex-direction: column;
     }
     .about_us h2{
         text-align: center;
@@ -465,18 +531,20 @@ footer{
         width: 150px;
     }
     .about_us .fa-quote-left {
-        right: 100px;
+        right: 254px;
     }
+ 
 }
 
-@media screen and (min-width:480px) and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:768px){
+    .container{
+        max-width: 720px;
+    }
     .col_mid{
         width: 100%;
         margin: 1rem 0;
     }
-    .benefits .col_mid{
-        width: 50%;
-    }
+    /* header */
     ul{
         display: none;
     }
@@ -484,22 +552,36 @@ footer{
         display: block;
         color: white;
     }
+    /* demo */
     .resp{
         flex-direction: column;
         padding-bottom: 5rem;
     }
     .demo img{
         margin-left: 0;
-
+        
     }
+    /* planning */
     .card{
         margin-top: 2rem;
     }
+    .planning .card{
+        margin-top: 0;
+    }
+    .planning img{
+        width: 550px;
+    }
+    /* expert */
     .expert .col_9{
         padding: 0 2rem;
     }
+    /* benefits */
+    .benefits .col_mid{
+        width: 50%;
+    }
+    /* about us */
     .about_us .fa-quote-left {
-        left: 90px;
+        left: 150pxpx;
     }
     .about_us .col_4_tab{
         width: calc((100% / 12)*4);
