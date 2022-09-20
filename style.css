@@ -413,7 +413,7 @@ cite{
     position: relative;
 }
 a[name=about_us]{
-    display: none;
+   background-color: white;
 }
 .about_us a:hover{
     padding: 0.5rem 2rem;
@@ -471,7 +471,7 @@ a[name=about_us]{
     text-decoration: underline;
 }
 a[name=get_started]{
-    display: none;
+    background-color: var(--res-primary);
 }
 .call_to_action a:hover{
     padding: 1rem 5rem;
